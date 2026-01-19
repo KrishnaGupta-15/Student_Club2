@@ -1,0 +1,27 @@
+*,*::before,*::after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header,footer{
+    display:flex;
+    padding :20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(23, 23, 61);
+    color:white;
+}
+a{
+    color:white;
+    text-decoration: none;
+    padding: 1px 3px;
+}
+a:hover{
+    font-size: large;
+    color:aquamarine;
+}
+#content{
+    padding: 40px;
+}
