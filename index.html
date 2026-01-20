@@ -3,52 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery-page</title>
+    <title>Student Club</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-     <div class="header-row">
-        <h1>Club Gallery</h1>
-        <button class="view-btn">View</button>
-     </div>
-       <nav class="filter-bar">
-        <button class="active">All</button>
-        <button>Architecture</button>
-        <button>Nature</button>
-        <button>Scenery</button>
-       </nav>
+        <h1>Student Club</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#members">Members</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
     </header>
-    <main class="gallery-main">
-        <div class="gallery-item" data-category="Architecture">
-          <img src="https://images.unsplash.com/photo-1519662978799-2f05096d3636?w=500&q=80" alt="Architecture">
-          <div class="overlay">
-            <h3>Modern Architecture</h3>
-            <p>Architecture</p>
-          </div>
-        </div>
-    
-      <div class="gallery-item" data-category="Nature">
-        <img src="https://images.unsplash.com/photo-1617634667039-8e4cb277ab46?w=500&q=80" alt="Nature">
-          <div class="overlay">
-             <h3>Nature</h3>
-             <p>Purity of Nature</p>
-          </div>
-       </div>
 
-      <div class="gallery-item" data-category="Scenery">
-        <img src="https://images.unsplash.com/photo-1615184697985-c9bde1b07da7?w=500&q=80" alt="Art">
-         <div class="overlay">
-            <h3>Scnery</h3>
-            <p>beauty OF Art</p>
-          </div>
-      </div>
-       
-    </main>
-    <div class="lightbox hide">
-      <button class="close-lightbox">✖</button>
-      <img src="" alt="Full Screen" class="lightbox-img">
-    </div> 
+    <div id="content"></div>
+
+    <footer>
+        <p>&copy; 2026 Student Club. All rights reserved.</p>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>
