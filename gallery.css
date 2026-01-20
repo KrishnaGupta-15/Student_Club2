@@ -109,3 +109,24 @@ button{
     border: none;
     cursor: pointer;
 }
+body.dark-mode{
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+body.dark-mode header{
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+body.dark-mode button {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #444; 
+}
+body.dark-mode .filter-bar button.active {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: white;
+}
+body.dark-mode .lightbox {
+    background-color: rgba(0, 0, 0, 0.95); /* Even darker overlay */
+}
