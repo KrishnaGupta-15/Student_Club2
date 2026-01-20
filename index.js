@@ -1,24 +1,22 @@
-const content = document.getElementById('content');
-const navLinks = document.querySelectorAll('nav a');
-async function loadPage(page){
-    try {
-        const response = await fetch(`${page}.html`);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const data=await response.text();
-        content.innerHTML = data;
-    }    catch (error) {
-        content.innerHTML = '<h2>Error loading page</h2>';
-    }
-}
-const defaultPage = 'home';
-loadPage(defaultPage);
+const filterButtons = document.querySelectorAll('.filter-bar button');
+const galleryItems = document.querySelectorAll('.gallery-item'); 
 
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const page =  link.getAttribute('href').substring(1);
-        loadPage(page);
+filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(btn=>btn.classList.remove('active'));
+        button.classList.add('active');
+        const category = button.textContent;
+    
+        
+        galleryItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            if (category === 'All' || itemCategory === category) {
+                item.classList.remove('hide');
+            } else {
+                item.classList.add('hide');
+            }
+        });
     });
 });
+
+
