@@ -8,9 +8,21 @@ async function loadPage(page){
         }
         const data=await response.text();
         content.innerHTML = data;
+        loadScript(page);
     }    catch (error) {
         content.innerHTML = '<h2>Error loading page</h2>';
     }
+}
+
+function loadScript(page) {
+    const oldScript = document.getElementById('page-script');
+    if(oldScript){
+        oldScript.remove();
+    }
+    const script = document.createElement('script');
+    script.id = 'page-script';
+    script.src = `${page}.js`;
+    document.body.appendChild(script);
 }
 const defaultPage = 'home';
 loadPage(defaultPage);

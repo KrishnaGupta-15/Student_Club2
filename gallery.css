@@ -1,4 +1,4 @@
- body{
+ /* body{
     margin: 0;
     font-family: sans-serif;
     background-color: #f9fafb;
@@ -13,7 +13,7 @@
     justify-content: space-between; 
     align-items: center; 
     margin-bottom: 20px; 
-}
+} */
 .filter-bar{
     display: flex;
     gap: 10px;
