@@ -12,8 +12,8 @@ async function loadPage(page){
         content.innerHTML = '<h2>Error loading page</h2>';
     }
 }
-// const defaultPage = 'home';
-// loadPage(defaultPage);
+const defaultPage = 'home';
+loadPage(defaultPage);
 
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
