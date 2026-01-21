@@ -1,0 +1,53 @@
+h2{
+    color:rgb(22, 73, 75);
+    width:50%;
+    text-align: center;
+    border: 2px solid rgb(22, 73, 75);
+    padding: 10px;
+    
+    border-radius: 10px;
+}
+h2:hover{
+    background-color:rgb(23, 23, 61);
+    color:white;
+    text-decoration: underline;
+}
+p{
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px;
+    width:60%;
+}
+.cards{
+   
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    border: 2px solid rgb(22, 73, 75);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 30%;
+    margin:20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+.card h3{
+    color:rgb(22, 73, 75);
+    margin: 10px;
+    padding: 10px;
+}
+.card:hover{
+    
+    background-color:rgb(23, 23, 61);
+    color:white;
+    h3{
+        color:white;
+        text-decoration: underline;
+    }
+}
