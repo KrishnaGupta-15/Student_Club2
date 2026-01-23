@@ -20,6 +20,14 @@ h1{
     font-size: 40px;
     font-weight: 100 ;
 } */
+  body{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top : 30px;
+    margin-left: 130px;
+    margin-right: 130px;}
 h2{
    color :rgb(99, 17, 17);
    padding: 12px 0px ;
@@ -55,4 +63,7 @@ h4{
     color : black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
+}
+h5{
+    margin-top: -20px;
 }
