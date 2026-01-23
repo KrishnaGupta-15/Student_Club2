@@ -1,0 +1,88 @@
+h2 {
+    color: rgb(22, 73, 75);
+    width: 50%;
+    text-align: center;
+    border: 2px solid rgb(22, 73, 75);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto; 
+}
+
+h2:hover {
+    background-color: rgb(23, 23, 61);
+    color: white;
+    text-decoration: underline;
+}
+
+p.intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 28%; /* Fit 3 in a row comfortably */
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    border-color: rgb(22, 73, 75);
+}
+
+.event-card h3 {
+    color: rgb(22, 73, 75);
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(23, 23, 61);
+    padding-bottom: 5px;
+}
+
+.event-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.event-date {
+    font-weight: bold;
+    color: rgb(23, 23, 61);
+    margin-top: auto; /* Push to bottom */
+    display: block;
+    text-align: right;
+}
+
+button.register-btn {
+    background-color: rgb(22, 73, 75);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+button.register-btn:hover {
+    background-color: rgb(23, 23, 61);
+}
